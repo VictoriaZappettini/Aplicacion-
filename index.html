@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127046762-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-127046762-1');
+
+       
+       
+
+        </script>
+         <link rel="shortcut icon" href="img/favicon-32x32.png">
+         <title>OPISU</title>
+          <meta charset="utf-8" />  
+        <meta name=viewport content="width=device-width, initial-scale=1">  
+
+        <link rel="stylesheet" type="text/css" href="./script/ext-3.4.0/resources/css/ext-all.css" />
+        <link rel="stylesheet" type="text/css" href="./script/ext-3.4.0/examples/shared/examples.css" />
+        <link rel="stylesheet" type="text/css" href="./script/ext-3.4.0/resources/css/xtheme-gray.css"/>
+
+        <link rel="stylesheet" type="text/css" href="./script/GeoExt.ux/printpreview.css">
+        <link rel="stylesheet" type="text/css" href="./script/tools/ordenCapas/ordenCapas.css">
+
+        <link rel="stylesheet" type="text/css" href="./theme/openlayers/default/style.css" />
+       <link rel="stylesheet" type="text/css" href="./theme/openlayers/default/google.css" />
+        <link rel="stylesheet" type="text/css" href="./theme/vialidad.css"/>
+        <link rel="stylesheet" type="text/css" href="./theme/geoext/css/geoext-all.css" />
+        <link rel="stylesheet" type="text/css" href="./theme/gxp/all.css"/>
+
+
+        <script src="./script/ext-3.4.0/adapter/ext/ext-base.js"></script>
+        <script src="./script/ext-3.4.0/ext-all-debug.js"></script>
+        <script src="./script/ext-3.4.0/examples/ux/ProgressBarPager.js"></script>
+        <script src="./script/OpenLayers.js"></script>
+        <script src="./script/GeoExt.js"></script>
+        <script src="./script/GeoExt.ux/Ext.ux.SearchField.js"></script>
+        <script src="./script/GeoExt.ux/ProgressBarPager.js"></script>
+
+         <script src="./script/GeoExt.ux/Ext.ux.GridPrinter.js"></script>                
+        <script src="./script/GeoExt.ux/PrintPreview.js"></script>
+          
+        <script src="./script/gxp/script/loader.js"></script>
+
+        <script type="text/javascript" src="./script/RowExpander.js"></script>
+     <script src="./script/OWM.OpenLayers.1.3.6.js" ></script>
+
+        <script type="text/javascript" src="./script/mootools-core-1.4.5.js"></script>
+        <script type="text/javascript" src="./script/mootools-more-1.4.0.1.js"></script>
+        <script type="text/javascript" src="./script/proj4.js"></script>
+       
+     <script type="text/javascript" src="./script/Nomenclatura.class.js"></script>
+       <script type="text/javascript" src="./script/Nomenclatura_partido_partida.class.js"></script>
+        
+        <script type="text/javascript" src="./script/posicionamiento.class.js"></script>
+      <script type="text/javascript" src="street_view.js"></script>
+        <script type="text/javascript" src="coords.js"></script>
+        <script type="text/javascript" src="./script/Buffer.class.js"></script>
+        <script type="text/javascript" src="./script/Sesion.class.js"></script>
+        <script type="text/javascript" src="./script/Distritos.class.js"></script> 
+        <script type="text/javascript" src="./script/dist.js"></script> 
+        <script type="text/javascript" src="./script/gotoxy.class.js"></script>
+        <script type="text/javascript" src="grupos_capas.js"></script>
+        <script type="text/javascript" src="sources.js"></script>
+        
+        
+        <script type="text/javascript" src="layers.js"></script>
+        <script type="text/javascript" src="utils.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="./theme/gxp/all.css"/>
+        <link rel="stylesheet" type="text/css" href="./theme/viewer.css"/>
+     <script type="text/javascript" src="./script/tools/ordenCapas/ordenCapas.class.js"></script>
+       
+
+        
+<style type="text/css">
+body {
+    background-color: #58595b !important;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 0px 0px 0px;
+}
+  </style>
+ </head>
+    <body> 
+    <div id="header" class="x-hidden">
+        <h1>Opisu</h1>
+        <button id="sesion">Cargando...</button>
+    </div>
+    <div id="nomenclatura" class="x-hidden"></div>
+    <div id="nomenclatura_par" class="x-hidden">   
+       <div>
+        <input id="partidoN1" type="text" tipo="numero" largo="3"/>
+        <input id="partidaN" type="text" tipo="texto" largo="6"/>
+       </div>
+    </div>
+    <div id="coords"></div>     
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyD5iIaA35nGeaWxVm4_us48stppFxjPXVA">    
+</script>
+    </body>
+</html>
+
