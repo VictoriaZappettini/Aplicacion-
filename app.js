@@ -27,6 +27,8 @@ Ext.onReady(function() {
                 border: !1,
                 activeTab: 0,
                 items: ["mymap", 
+   
+
                  {
                     title: "Datos e informes",
                     autoScroll: !0,
@@ -35,9 +37,6 @@ Ext.onReady(function() {
                     title: "Barrios",
                     html: "<iframe  width='100%' height='100%' src='barrios.html'>"
                 },
-
-
-
                 {
                     title: "Google Street",
                     html: "<iframe  width='100%' height='100%' src='street.html'>"
@@ -60,6 +59,11 @@ Ext.onReady(function() {
                  {
                     title: "Solicitud de Información",
                     html: "<iframe  width='100%' height='100%' src='solicitud.html'>"
+                },
+                 {
+                    title: "MARRC",
+                    autoScroll: !0,
+                    html: "<iframe  width='100%' height='100%' src='casos.html'>"
                 },
                  {
                     title: "Participación Ciudadana",
