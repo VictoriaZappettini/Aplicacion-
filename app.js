@@ -17,9 +17,10 @@ Ext.onReady(function() {
                 region: "north",
                 border: !0,
                 height: 100,
-                items: [{
-                    html: '<img src="./img/gastonLogo.jpeg" width="1450" height="100" />'
-                }]
+                html: '<img src="img/IDE1.png"  width="1400" height="100"/>'
+                //items: [{
+                //   
+               // }]
             }, {
                 id: "centerpanel",
                 xtype: "tabpanel",
