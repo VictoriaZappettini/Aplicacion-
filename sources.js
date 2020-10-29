@@ -1,5 +1,5 @@
 var sources = {
-    opisu: {
+    /*opisu: {
         url: "http://geoserveropisu.ddns.net:8080/geoserver/idera/wms?",        
         title: "opisu",
         ptype: "gxp_wmscsource"
@@ -34,6 +34,7 @@ var sources = {
         title: "GeoInfra",
         ptype: "gxp_wmscsource"
         },
+        */
     ign: {
         url: "https://wms.ign.gob.ar/geoserver/ows?",        
         title: "IGN",
