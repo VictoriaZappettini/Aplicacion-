@@ -62,6 +62,11 @@ Ext.onReady(function() {
                     html: "<iframe  width='100%' height='100%' src='solicitud.html'>"
                 },
                  {
+                    title: "Estimación IA",
+                    autoScroll: !0,
+                    html: "<iframe  width='100%' height='100%' src='estimacion.html'>"
+                },
+                 {
                     title: "MARRC",
                     autoScroll: !0,
                     html: "<iframe  width='100%' height='100%' src='casos.html'>"

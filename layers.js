@@ -23,6 +23,13 @@ var layers = [
         },
          {
             source: "opisu",
+            name: "Estimacion_Poblacional",
+            visibility: false,
+            title: "Estimación Poblacional",
+            group: "opisu"
+        },
+          {
+            source: "opisu",
             name: "Evaluación_Barrios_Muestra_NISU",
             visibility: false,
             title: "Nisu",
