@@ -28,11 +28,11 @@ $host = @$parsed["host"];
 $path = @$parsed["path"] . "?" . @$parsed["query"];
 if(empty($host)) {    
   //$host = "mapa-runbo.presi.unlp.edu.ar";
-    $host = "opisu.ddns.net";
+    $host = "http://visualizador.opisu.gba.gob.ar/ide/";
 }
 $port = @$parsed['port'];
 if(empty($port)){
-  $port="82"; 
+  $port="80"; 
 }
 $contenttype = @$_REQUEST['contenttype'];
 if(empty($contenttype)) {
