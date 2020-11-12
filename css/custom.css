@@ -1,0 +1,100 @@
+@import "checkbox.css";
+
+body.site-navbar-small {    padding-top: 110px;    }
+
+.site-footer{  position:fixed; background: #fff}
+/*body {margin-bottom:50px;}*/
+.espaciado {padding-bottom:29px; margin-top: 23px;margin-bottom: 10px;}
+
+#gmap_canvas img{max-width:none!important;background:none!important}
+
+#contenido_informe{ overflow-y: scroll;}
+#toolbar{     margin-top: 15px; }
+#result,.fullscreen{background: #fff !important;  overflow: auto !important;}
+
+
+.sub_columnumnas{ width: 170px; height: 20px; overflow: hidden;}
+
+.width_200{width: 200px;}
+.width_140{width:140px}
+.table .thead-dark th {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+}
+.width_40{width: 40px !important; text-align: center;}
+.width_20{width: 20px !important; }
+.width_70{width: 70px !important;}
+
+
+/** medidas generales */
+.padding_20{padding:10px ;}
+.padding_20{padding:20px ;}
+.padding_30{padding:30px ;}
+.padding_40{padding:40px ;}
+
+
+.margin_20{ margin:20px}
+
+
+
+.alignmoney {text-align:right;}
+
+
+.tools{ width:70px}
+
+
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.table .thead-primary th {
+    color: #ffffff;
+    background-color: #62a8ea;
+    border-color: #62a8ea;
+}
+
+#__enlaces{display: none;}
+
+.visible {
+    display: none;
+    overflow: hidden
+}
+
+#photoshop{
+    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    height:calc(100vh - 120px);
+    width:100%;
+    position:absolute;
+    top:110px;
+    left:0px;
+    right:0px;
+    bottom:0px
+}
+
+.pesos:before {  content: "$ "; }
+.pesos{color:#3f5fbf; font-size: 14px;
+        padding-left:2px !important; padding-right:2px !important;
+        number-format: "###.##0,00", "dolar";
+        grouping-separator: ".";
+        decimal-separator : ","
+}
+
+form input{font-family:Roboto,sans-serif, FontAwesome;}
+/*
+::placeholder { 
+color: red !important;
+opacity: 1; 
+::-ms-input-placeholder { 
+color: red;
+}
+::-ms-input-placeholder { 
+color: red;
+}
+
+*/
