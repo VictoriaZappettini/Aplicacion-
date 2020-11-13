@@ -33,7 +33,7 @@ Ext.onReady(function() {
                  {
                     title: "Datos e informes",
                     autoScroll: !0,
-                    html: "<iframe  width='100%' height='100%' src='registros.html'>"
+                    html: "<iframe  width='100%' height='100%' src='registros.php'>"
                 }, {
                     title: "Barrios",
                     html: "<iframe  width='100%' height='100%' src='barrios.html'>"
