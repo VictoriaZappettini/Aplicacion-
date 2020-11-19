@@ -18,6 +18,7 @@ $Name$
 
 // read in the variables
 
+$proxy=true;
 
 if(array_key_exists('HTTP_SERVERURL', $_SERVER)){
   $onlineresource=$_SERVER['HTTP_SERVERURL'];
@@ -36,9 +37,24 @@ if(empty($port)){
   $port="80"; 
 }
 
-if(isset($_REQUEST['contenttype'])){
-  header("Content-type: " . filter_var($_REQUEST['contenttype'],FILTER_SANITIZE_STRING));
+#var_dump($_GET['url']);die;
+
+if(in_array($_GET['url'],
+          array('http://www.urbasig.gob.gba.gob.ar/geoserver/pdf/info.json',
+          'http://geo.arba.gov.ar/geoserver/idera/wms?SERVICE=WMS&REQUEST=GetCapabilities&TILED=true&VERSION=1.1.1',
+          'http://www.urbasig.gob.gba.gob.ar/geoserver/urbasig/wms?SERVICE=WMS&REQUEST=GetCapabilities&TILED=true&VERSION=1.1.1',
+          'http://www.geoinfra.minfra.gba.gov.ar/geoserver/Geoinfra/wms?SERVICE=WMS&REQUEST=GetCapabilities&TILED=true&VERSION=1.1.1'
+                    
+          )
+          
+          )){
+            $proxy=false;
+}else{
+            $contenttype = "text/xml";
+            header("Content-type: " . $contenttype);
 }
+
+
 
 
 $contenttype = @$_REQUEST['contenttype'];
@@ -46,7 +62,9 @@ if(empty($contenttype)) {
   $contenttype = "text/xml";
   //$contenttype = "application/json";
 }
-
+$data = @$_SERVER["HTTP_RAW_POST_DATA"];
+// define content type
+#header("Content-type: " . $contenttype);
 
 if(empty($data)) {
   $result = send_request();
@@ -149,31 +167,48 @@ class HTTP_Client {
 
 
 function send_request() {
-  global $onlineresource;
+  global $onlineresource,$proxy;
   $ch = curl_init($onlineresource);
- 
   // fix to allow HTTPS connections with incorrect certificates
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
   curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
-  curl_setopt($ch, CURLOPT_TIMEOUT, 1);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  $file_contents = curl_exec($ch);
-
-  //Habilitamos el debugueo del curl para ver la info
- curl_errno($ch);
-  #echo __FILE__.':'.__LINE__.' -> Bypass'.var_dump($file_contents);
-  //Obtenemos la info
-  $info = curl_getinfo($ch);
-    if($info["http_code"]!=200){//si no llega a estar en success la conexión, le ponemos proxy y relanzamos el servicio
-      curl_setopt($ch, CURLOPT_PROXY, '10.2.251.25:3128');
-      $file_contents = curl_exec($ch);
-      
+  if($proxy){
+    curl_setopt($ch, CURLOPT_PROXY, '10.2.251.25:3128');
   }
 
-  
+  curl_exec($ch);
   curl_close($ch);
-
-
-  echo $file_contents;die;
-  return $file_contents;
 }
+/*
+
+function send_request() {
+  global $onlineresource,$proxy;
+  $ch = curl_init();
+  $timeout = 5; // set to zero for no timeout
+
+  // fix to allow HTTPS connections with incorrect certificates
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+  curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+
+  curl_setopt ($ch, CURLOPT_URL,$onlineresource);
+  curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+  if($proxy){
+    curl_setopt($ch, CURLOPT_PROXY, '10.2.251.25:3128');
+  }
+  //curl_setopt ($ch, CURLOPT_PROXY, "10.41.5.16");
+  //curl_setopt ($ch, CURLOPT_PROXYPORT, 80);
+
+  curl_setopt ($ch, CURLOPT_ENCODING , "gzip, deflate");  
+
+  $file_contents = curl_exec($ch);
+  curl_close($ch);
+  $lines = array();
+  $lines = explode("\n", $file_contents);
+  if(!($response = $lines)) {
+    echo "Unable to retrieve file '$service_request'";
+  }
+  $response = implode("",$response);  
+  return $response;
+}*/
+?>

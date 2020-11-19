@@ -1,4 +1,4 @@
-var server = "http://sig.gobierno.gba.gov.ar:8080";
+/*var server = "http://sig.gobierno.gba.gov.ar:8080";
 var macizos = "macizos",
 	parcelas = "parcelas";
 var workspace = "arba";
@@ -276,3 +276,4 @@ var Nomenclatura = new Class({
 		}
 	}
 });
+*/

@@ -1,11 +1,11 @@
 var sources = {
     opisu: {
-        url: "http://geoserveropisu.ddns.net:8080/geoserver/idera/wms?",        
+	    url: "https://geoserver.opisu.gba.gob.ar/geoserver/ows?service",        
         title: "opisu",
         ptype: "gxp_wmscsource"
         },
     oficiales: {
-        url: "http://geoserveropisu.ddns.net:8080/geoserver/idera/wms?",        
+	    url: "https://geoserver.opisu.gba.gob.ar/geoserver/ows?service",  
         title: "opisu",
         ptype: "gxp_wmscsource"
         },

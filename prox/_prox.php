@@ -18,35 +18,37 @@ $Name$
 
 // read in the variables
 
-
 if(array_key_exists('HTTP_SERVERURL', $_SERVER)){
   $onlineresource=$_SERVER['HTTP_SERVERURL'];
 }else{
   $onlineresource=$_REQUEST['url'];  
 }
+
 $parsed = parse_url($onlineresource);
 $host = @$parsed["host"];
 $path = @$parsed["path"] . "?" . @$parsed["query"];
 if(empty($host)) {    
   //$host = "mapa-runbo.presi.unlp.edu.ar";
-    $host = "http://visualizador.opisu.gba.gob.ar/ide/";
+    $host = "visualizador.opisu.gba.gob.ar";
 }
 $port = @$parsed['port'];
 if(empty($port)){
   $port="80"; 
 }
 
-if(isset($_REQUEST['contenttype'])){
-  header("Content-type: " . filter_var($_REQUEST['contenttype'],FILTER_SANITIZE_STRING));
-}
-
+#array(4) { ["scheme"]=> string(4) "http" ["host"]=> string(15) "geo.arba.gov.ar" ["path"]=> string(20) "/geoserver/idera/wms" ["query"]=> string(60) "SERVICE=WMS&REQUEST=GetCapabilities&TILED=true&VERSION=1.1.1" }
+#echo var_dump($parsed);die;
 
 $contenttype = @$_REQUEST['contenttype'];
 if(empty($contenttype)) {
   $contenttype = "text/xml";
   //$contenttype = "application/json";
 }
+$data = @$_SERVER["HTTP_RAW_POST_DATA"];
 
+#$data = array($parsed['query']);
+// define content type
+header("Content-type: " . $contenttype);
 
 if(empty($data)) {
   $result = send_request();
@@ -150,30 +152,29 @@ class HTTP_Client {
 
 function send_request() {
   global $onlineresource;
-  $ch = curl_init($onlineresource);
- 
+  $ch = curl_init();
+  $timeout = 5; // set to zero for no timeout
+
   // fix to allow HTTPS connections with incorrect certificates
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-  curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
-  curl_setopt($ch, CURLOPT_TIMEOUT, 1);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+
+  curl_setopt ($ch, CURLOPT_URL,$onlineresource);
+  curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+
+  curl_setopt ($ch, CURLOPT_PROXY, "10.2.251.62");
+  curl_setopt ($ch, CURLOPT_PROXYPORT, 3128);
+
+  curl_setopt ($ch, CURLOPT_ENCODING , "gzip, deflate");  
+
   $file_contents = curl_exec($ch);
-
-  //Habilitamos el debugueo del curl para ver la info
- curl_errno($ch);
-  #echo __FILE__.':'.__LINE__.' -> Bypass'.var_dump($file_contents);
-  //Obtenemos la info
-  $info = curl_getinfo($ch);
-    if($info["http_code"]!=200){//si no llega a estar en success la conexión, le ponemos proxy y relanzamos el servicio
-      curl_setopt($ch, CURLOPT_PROXY, '10.2.251.25:3128');
-      $file_contents = curl_exec($ch);
-      
-  }
-
-  
   curl_close($ch);
-
-
-  echo $file_contents;die;
-  return $file_contents;
+  $lines = array();
+  $lines = explode("\n", $file_contents);
+  if(!($response = $lines)) {
+    echo "Unable to retrieve file ";
+  }
+  $response = implode("",$response);  
+  return $response;
 }

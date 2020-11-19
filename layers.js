@@ -30,7 +30,7 @@ var layers = [
         },
           {
             source: "opisu",
-            name: "Evaluación_Barrios_Muestra_NISU",
+            name: "Nisu",
             visibility: false,
             title: "Nisu",
             group: "opisu"
