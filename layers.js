@@ -9,23 +9,24 @@ var layers = [
         },
       {
             source: "opisu",
-            name: "Barrios_Intervencion_OPISU_Agosto_2020_WGS84",
+            name: "Barrios_Intervencion_OPISU_NOV_2020",
             visibility: false,
-            title: "Barrios Intervención Agosto 2020",
+            title: "Barrios_Intervencion_OPISU_NOV_2020",
             group: "opisu"
         },
         {
             source: "opisu",
-            name: "base_rppvap",
+            name: "Barrios_RPPVAP_16-4-20_geoTopo",
             visibility: false,
-            title: "Rppvap base",
+            title: "Barrios_RPPVAP_16-4-20_geoTopo",
             group: "oficiales"
         },
+	
          {
             source: "opisu",
             name: "Estimacion_Poblacional",
             visibility: false,
-            title: "Estimación Poblacional",
+            title: "Estimacion Poblacional",
             group: "opisu"
         },
           {

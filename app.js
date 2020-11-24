@@ -303,8 +303,12 @@ Ext.onReady(function() {
         },
         div: document.getElementById("coords")
     }));
+    try {
     nomenclatura = new Nomenclatura(this);
     nomenclatura_par = new Nomenclatura_par(this);    
+    }catch(err) {
+        console.log(err);
+    }
     buffer = new Buffer(this)
 });
 

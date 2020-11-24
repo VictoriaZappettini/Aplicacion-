@@ -173,7 +173,7 @@ function send_request() {
   
   curl_close($ch);
 
-
-  echo $file_contents;die;
+  header("Content-type: text/xml");
+  #echo $file_contents;die;
   return $file_contents;
 }
