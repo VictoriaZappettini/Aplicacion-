@@ -1,6 +1,6 @@
 var grupos_capas = {
 				"opisu" : {title: "Capas Opisu", expanded:true},
-				"oficiales" : {title: "Registros oficiales de barrios populares", expanded: false},
+			/*	"oficiales" : {title: "Registros oficiales de barrios populares", expanded: false},*/
 				"arba" : {title: "ARBA",  expanded: false},
 				"ign" : {title: "IGN",  expanded: false},
 				"geoinfra" : {title: "GeoInfra",  expanded: false},

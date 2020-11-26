@@ -1,12 +1,12 @@
 var layers = [     
         //OPISU 
-         {
+        /* {
             source: "opisu",
             name: "Renabap_2018_base_csv_shape",
             visibility: false,
             title: "Renabap 2018 base",
             group: "oficiales"
-        },
+        },*/
       {
             source: "opisu",
             name: "Barrios_Intervencion_OPISU_NOV_2020",
@@ -14,13 +14,13 @@ var layers = [
             title: "Barrios_Intervencion_OPISU_NOV_2020",
             group: "opisu"
         },
-        {
+       /* {
             source: "opisu",
             name: "Barrios_RPPVAP_16-4-20_geoTopo",
             visibility: false,
             title: "Barrios_RPPVAP_16-4-20_geoTopo",
             group: "oficiales"
-        },
+        },*/
 	
          {
             source: "opisu",

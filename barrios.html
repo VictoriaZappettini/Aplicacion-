@@ -1,363 +1,350 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Opisu</title>
-    <img src="img/IsologoOpisu3.png"     width="200" height="150" alt="logo"/>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/index_style.css">
-        <body style="background-color: #00aec3ff;">
-		<link rel="stylesheet" type="text/css" href="css/index_style.css">
-		<lnk rel="stylesheet" href="./css/bootstrap.min.css">
-		<link rel="stylesheet" href="./css/bootstrap-extend.min.css">
-  <link rel="stylesheet" href="./css/site.min.css">
-       <b><DIV ALIGN=center><h1 style="color: #FFFFFF;">Barrios populares con intervención del OPISU</h1></DIV></b>
+<title>Opisu</title>
+<img src="img/IsologoOpisu3.png"     width="200" height="150" alt="logo"/>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="css/index_style.css">
+<body style="background-color: #00aec3ff;">										 <link rel="stylesheet" type="text/css" href="css/index_style.css">							 <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <link rel="stylesheet" href="./css/bootstrap-extend.min.css">
+ <link rel="stylesheet" href="./css/site.min.css">
+ <b><DIV ALIGN=center><h1 style="color: #FFFFFF;">Barrios populares con intervención del OPISU</h1></DIV></b>
 
       <DIV ALIGN=center><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTmp6OX6vTCM-fsHnu7p6j8IcHpVBO439edGSjdnzvS3GSWcCXP1j78LH4j2JpFwA/embed?start=false&loop=false&delayms=60000"  frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></DIV>
-<br></br>
  <br></br>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-
-
-
+ <br></br>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <script>
  // Write on keyup event of keyword input element
- $(document).ready(function(){
- $("#search").keyup(function(){
- _this = this;
- // Show only matching TR, hide rest of them
- $.each($("#mytable tbody tr"), function() {
- if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
- $(this).hide();
- else
- $(this).show();
- });
- });
-});
-</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <style type="text/css">
-   .panel-primary {
-            border-color: #9ACA3C
-        }
-        
-        .panel-primary>.panel-heading {
-            color: #fff;
-            background-color: #9ACA3C;
-            border-color: #9ACA3C
-        }
-        
-        .pagination {
-            border-color: #9ACA3C
-        }
-        
-        .panel-primary>.panel-heading {
-            color: #fff;
-            background-color: #9ACA3C;
-            border-color: #9ACA3C
-        }
-        
-        .botonenviar-servicios {
-            width: 50px;
-            background-color: #8aab26;
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 13px;
-            font-weight: bold;
-            cursor: pointer;
-            height: 38px;
-            -moz-appearance: none;
-            -moz-binding: none;
-            -moz-box-sizing: none;
-            -moz-user-select: none;
-            border: 0px;
-        }
-    </style>
-    <body style="background-color: #00aec3ff;">
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/angular.min.js"></script>
-    <script src="./js/ui-bootstrap-tpls-0.10.0.js" type="text/javascript"></script>
-    <script src="./js/filtros.js"></script>
+	 $(document).ready(function(){
+	$("#search").keyup(function(){
+		_this = this;;
+  // Show only matching TR, hide rest of them
+       h($("#mytable tbody tr"), function() {
+	       if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+	       $(this).hide();
+	    else
+		 $(this).show();
+			 });
+  				});
+				     });
+	    </script>
+ <meta nawidth, initial-scale=1">
+ <link rel="stylesheet" href="./css/bootstrap.css">
+ <style type="text/css">
+  .panel-primary {
+   border-color: #9ACA3C
+		 }
+ .panel-primary>.panel-heading {
+  color: #fff;
+  background-color: #9ACA3C;
+  border-color: #9ACA3C;													 }		         
+ .pagination {
+ border-color: #9ACA3C
+														             }
+											         
+  .panel-primary>.panel-heading {
+  color: #fff;
+  background-color: #9ACA3C;														             border-color: #9ACA3C
+															             }												         _this = this;
+												         .botonenviar-servicios {
+														             width: 50px;
+ background-color: #8aab26;												 color: #ffffff;													 font-family: Arial, Helvetica, sans-serif;
+															 font-size: 13px;
+															 font-weight: bold;
+															 cursor: pointer;
+															 height: 38px;
+															  -moz-appearance: none;
+											
+															  -moz-binding: none;
+																													             -moz-box-sizing: none;
+																														                 -moz-user-select: none;
+																																             border: 0px;
+																																	             }
+		    </style>
+  <body style="background-color: #00aec3ff;">
+ <script src="./js/jquery.min.js"></script>
+ <script src="./js/bootstrap.min.js"></script>
+ <script src="./js/angular.min.js"></script>
+
+<script src="./js/ui-bootstrap-tpls-0.10.0.js" type="text/javascript"></script>
+  <script src="./js/filtros.js"></script>
 </head>
 
+
 <div class="form-group">
- <input type="text" class="form-control pull-right" style="width:20%" id="search" placeholder="Buscar por barrio/partido"><p class="tipografia_9" style="color: #FFFFFF;">**Link a proyectos integrales en los nombres de Barrios</p>
-</div>
+ <input type="text" class="form-control pull-right" style="width:20%" id="search" placeholder="Buscar por barrio/partido"><p style="color: #FFFFFF;">**Link a proyectos integrales en los nombres de Barrios</p>
+ </div>
 
 
-<a href="datos/Informe - Datos Barrios OPISU 26.08.20 FINAL.pdf" download="Informe-Datos Barrios OPISU"><p class="tipografia_7", style="color: #FFFFFF;">Descargar tabla</a></p>
+ <a href="datos/DatosBarriosOPISU-25.11.20.pdf" download="Informe-Datos Barrios OPISU"><h3 style="color: #FFFFFF;">Descargar tabla</a></h3>
 
 
-
-<table class="table-bordered table pull-right" id="mytable" cellspacing="0" style="width: 100%;">
+ <table class="table-bordered table pull-right" id="mytable" cellspacing="0" style="width: 100%;">
  <thead>
  <tr role="row">
- <th><p class="tipografia_7" style="color: #FFFFFF;">Barrio</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Partido</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Población</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Hogares</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Viviendas</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Superficie</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Densidad</p></th>
- </tr>
+ <th><p  style="color: #FFFFFF;">Barrio</p></th>
+ <th><p style="color: #FFFFFF;">Partido</p></th>
+ <th><p  style="color: #FFFFFF;">Población</p></th>
+ <th><p  style="color: #FFFFFF;">Hogares</p></th>
+ <th><p style="color: #FFFFFF;">Viviendas</p></th>
+ <th><p  style="color: #FFFFFF;">Superficie</p></th>
+  <th><p  style="color: #FFFFFF;">Densidad</p></th>
+  </tr>
  </thead>
- <tbody>
- <tr>
- 
- <th><div>
-    <a href="https://drive.google.com/file/d/1FbV7d0q-QCWakk221TT3Td-6yeg8CmOj/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >Libertad</p></img></a>
-</div></th>
-<th><p class="tipografia_7" style="color: #FFFFFF;">Almirante Brown</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">1249</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">351</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">348</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">11,21</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">111</p></th>
- </tr>
- <tr>
-<th><div>
-    <a href="https://drive.google.com/file/d/1FbV7d0q-QCWakk221TT3Td-6yeg8CmOj/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >Don Orione</p></img></a>
-</div></th>
-<th><p class="tipografia_7" style="color: #FFFFFF;">Almirante Brown</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">3594</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">1048</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">1040</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">25,53</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">141</p></th>
- </tr>
- <tr>
- <th><p class="tipografia_7" style="color: #FFFFFF;">6 de Diciembre</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Almirante Brown</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">456</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">102</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">144</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">3,16</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">129</p></th>
-
- </tr>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Villa Tranquila</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Avellaneda</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">11250</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">3348</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">3483</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">39,21</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">287</p></th>
- </tr>
- <tr>
-    <th><div>
-    <a href="https://drive.google.com/file/d/1l7jcXOl7kVOHbonO-5DOfprC1mrYKcCp/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >Autódromo</p></img></a>
-</div></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">General Pueyrredón</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">3225</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">960</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">998</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">60,99</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">53</p></th>
- </tr>
- <tr>
-  <th><div>
-    <a href="https://drive.google.com/file/d/1l7jcXOl7kVOHbonO-5DOfprC1mrYKcCp/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >Nuevo Golf</p></img></a>
-</div></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">General Pueyrredón</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">2625</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">781</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">813</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">55,21</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">48</p></th>
- </tr>
- <tr>
-
-  <th><div>
-    <a href="https://drive.google.com/file/d/1MUsvdgS3JlmY8HRe1es-uEQCxYnbpkmx/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >CC8</p></img></a>
-</div></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Gral. San Martín</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">18711</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">5072</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">4924</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">74,75</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">250</p></th>
- </tr>
- <tr>
- <th><div>
-    <a href="https://drive.google.com/file/d/1YDCNpZiwxxEK6zb-hKUnBJjwrXRR2Sxu/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >17 de Marzo </p></img></a>
-</div></th>
-<th><p class="tipografia_7" style="color: #FFFFFF;">La Matanza</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">3656</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">1064</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">1132</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">29,78</p>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">123</p></th>
-    </th>
- </th>
- </tr>
- <tr>
-  
-<th><div>
-    <a href="https://drive.google.com/file/d/1YDCNpZiwxxEK6zb-hKUnBJjwrXRR2Sxu/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >17 de Marzo Bis</p></img></a>
-</div></th>
-<th><p class="tipografia_7" style="color: #FFFFFF;">La Matanza</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">926</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">222</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">287</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">4,95</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">187</p></th>
- </tr>
- <tr>
- <th><div>
-    <a href="https://drive.google.com/file/d/1YDCNpZiwxxEK6zb-hKUnBJjwrXRR2Sxu/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >Puerta de Hierro</p></img></a>
-</div></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">La Matanza</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">4721</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">1337</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">1461</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">19,61</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">241</p></th>
-
- 
- </tr>
- <tr>
-  <th><div>
-    <a href="https://drive.google.com/file/d/1YDCNpZiwxxEK6zb-hKUnBJjwrXRR2Sxu/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;">San Petersburgo</p></img></a>
-</div></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">La Matanza</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">1913</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">552</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">592</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">4,37</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">438</p></th>
- 
- </tr>
- <tr>
-   <th><div>
-    <a href="https://drive.google.com/file/d/1IIZhhOSN4DNZxU1sDwYWfqxFxcqo_FQI/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >Porá</p></img></a>
-</div></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Lanús</p></th>
- 
-  <th><p class="tipografia_7" style="color: #FFFFFF;">1355</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">338</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">324</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">3,36</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">403</p></th>
- </tr> 
- <tr>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">La Olla</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Malvinas Argentinas</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">375</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">112</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">116</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">1,79</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">209</p></th>
- </tr>
-  <tr>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Santa Elena</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Malvinas Argentinas</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">413</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">123</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">128</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">2,1</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">197</p></th>
- </tr>
-  <tr>
-  <th><div>
-    <a href="https://drive.google.com/file/d/1Efn--lW3N0TCHF51g4dbwrvXjQ4oCV5E/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >C.G -Pte. Sarmiento</p></img></a>
-</div></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Morón</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">4864</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">1238</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">1433</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">12,2</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">399</p></th>
- </tr>
-  <tr>
-    <th><div>
-    <a href="https://drive.google.com/file/d/1Efn--lW3N0TCHF51g4dbwrvXjQ4oCV5E/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >C.G- Plan Federal</p></img></a>
-</div></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Morón</p></th>
- 
-  <th><p class="tipografia_7" style="color: #FFFFFF;">2038</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">466</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">574</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">11,97</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">170</p></th>
- </tr>
-  <tr>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Monterrey</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Pilar</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">10808</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">2820</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">3346</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">134,73</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">80</p></th>
- </tr>
-  <tr>
-    <th><div>
-    <a href="https://drive.google.com/file/d/1M1trvQq6fY2B4PvnkLCu0RwR8KH5iSb-/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >Itatí</p></img></a>
-</div></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Quilmes</p></th>
- 
-  <th><p class="tipografia_7" style="color: #FFFFFF;">15142</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">4262</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">4151</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">50,48</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">298</p></th>
- </tr>
- <tr>
-   <th><div>
-    <a href="https://drive.google.com/file/d/1M1trvQq6fY2B4PvnkLCu0RwR8KH5iSb-/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >Azul</p></img></a>
-</div></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Quilmes</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">3128</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">836</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">799</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">8,46</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">370</p></th>
- </tr>
- <tr>
-   <th><div>
-    <a href="https://drive.google.com/file/d/1yC7L_FsgNS0006_V-ofhLjCpsAyhGoXC/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >La Cava</p></img></a>
-</div></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">San Isidro</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">13515</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">3475</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">2426</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">18,21</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">742</p></th>
- </tr>
-<tr>
-  <th><div>
-    <a href="https://drive.google.com/file/d/1bUhkUPoLBnWdbh5mdJxwxx_WIVXo4225/view?usp=sharing" target="_blank"><p class="tipografia_7" style="color: #FFFFFF;" >Garrote</p></img></a>
-</div></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">Tigre</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">2649</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">790</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">806</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">7,38</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">359</p></th>
- </tr>
- <tr>
-  <th ><p class="tipografia_7" style="color: #FFFFFF;">Esperanza</p></th>
- <th><p class="tipografia_7" style="color: #FFFFFF;">Tres de Febrero</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">1106</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">329</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">342</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">4,51</p></th>
-      <th><p class="tipografia_7" style="color: #FFFFFF;">245</p></th>
- </tr>
-<tr> 
-
-  <th><p class="tipografia_7" style="color: #FFFFFF;"></p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">TOTAL</p></th>
-
- <th><p class="tipografia_7" style="color: #FFFFFF;">107728</p></th>
-  <th><p class="tipografia_7" style="color: #FFFFFF;">29671</p></th>
-   <th><p class="tipografia_7" style="color: #FFFFFF;">29668</p></th>
-    <th><p class="tipografia_7" style="color: #FFFFFF;">585</p></th>
-     <th><p class="tipografia_7" style="color: #FFFFFF;">249 (promedio)</p></th>
- </tr>
-</tbody>
+					      <tbody>
+						       <tr>
+							       <th><div>
+									           <a href="https://drive.google.com/file/d/1FbV7d0q-QCWakk221TT3Td-6yeg8CmOj/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >Libertad</p></img></a>
+								       </div></th>
+								       <th><p  style="color: #FFFFFF;">Almirante Brown</p></th>
+								        <th><p  style="color: #FFFFFF;">1249</p></th>
+									 <th><p  style="color: #FFFFFF;">351</p></th>
+									  <th><p  style="color: #FFFFFF;">348</p></th>
+									   <th><p  style="color: #FFFFFF;">11,21</p></th>
+									    <th><p  style="color: #FFFFFF;">111</p></th>
+									     </tr>
+									      <tr>
+										      <th><div>
+												          <a href="https://drive.google.com/file/d/1FbV7d0q-QCWakk221TT3Td-6yeg8CmOj/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >Don Orione Viejo</p></img></a>
+											      </div></th>
+											      <th><p  style="color: #FFFFFF;">Almirante Brown</p></th>
+											       <th><p style="color: #FFFFFF;">3594</p></th>
+											        <th><p style="color: #FFFFFF;">1048</p></th>
+												 <th><p style="color: #FFFFFF;">1040</p></th>
+												   <th><p style="color: #FFFFFF;">25,53</p></th>
+												      <th><p  style="color: #FFFFFF;">141</p></th>
+												       </tr>
+												        <tr>
+														 <th><p  style="color: #FFFFFF;">6 de Diciembre</p></th>
+														  <th><p  style="color: #FFFFFF;">Almirante Brown</p></th>
+														   <th><p  style="color: #FFFFFF;">456</p></th>
+														    <th><p  style="color: #FFFFFF;">102</p></th>
+														     <th><p  style="color: #FFFFFF;">144</p></th>
+														      <th><p style="color: #FFFFFF;">3,16</p></th>
+														       <th><p  style="color: #FFFFFF;">129</p></th>
 
 
- 
+														        <tr>
+																    <th><div>
+																		        <a href="https://drive.google.com/file/d/1l7jcXOl7kVOHbonO-5DOfprC1mrYKcCp/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >Autódromo</p></img></a>
+																	    </div></th>
+																	     <th><p  style="color: #FFFFFF;">General Pueyrredón</p></th>
+																	       <th><p  style="color: #FFFFFF;">3225</p></th>
+																	          <th><p  style="color: #FFFFFF;">960</p></th>
+																		      <th><p  style="color: #FFFFFF;">998</p></th>
+																		           <th><p style="color: #FFFFFF;">60,99</p></th>
+																			         <th><p  style="color: #FFFFFF;">53</p></th>
+																				  </tr>
+																				   <tr>
+																					     <th><div>
+																							         <a href="https://drive.google.com/file/d/1l7jcXOl7kVOHbonO-5DOfprC1mrYKcCp/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >Nuevo Golf</p></img></a>
+																						     </div></th>
+																						      <th><p style="color: #FFFFFF;">General Pueyrredón</p></th>
+																						        <th><p  style="color: #FFFFFF;">1538</p></th>
+																							   <th><p  style="color: #FFFFFF;">397</p></th>
+																							       <th><p  style="color: #FFFFFF;">426</p></th>
+																							            <th><p  style="color: #FFFFFF;">55,21</p></th>
+																								          <th><p  style="color: #FFFFFF;">29</p></th>
+																									   </tr>
+																									    <tr>
+
+																										      <th><div>
+																												          <a href="https://drive.google.com/file/d/1MUsvdgS3JlmY8HRe1es-uEQCxYnbpkmx/view?usp=sharing" target="_blank"><p style="color: #FFFFFF;" >CC8</p></img></a>
+																											      </div></th>
+																											        <th><p  style="color: #FFFFFF;">Gral. San Martín</p></th>
+																												  <th><p  style="color: #FFFFFF;">18711</p></th>
+																												     <th><p  style="color: #FFFFFF;">5072</p></th>
+																												         <th><p  style="color: #FFFFFF;">4924</p></th>
+																													      <th><p  style="color: #FFFFFF;">74,75</p></th>
+																													            <th><p  style="color: #FFFFFF;">250</p></th>
+																														     </tr>
+																														      <tr>
+																															       <th><div>
+																																	           <a href="https://drive.google.com/file/d/1YDCNpZiwxxEK6zb-hKUnBJjwrXRR2Sxu/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >17 de Marzo </p></img></a>
+																																       </div></th>
+																																       <th><p style="color: #FFFFFF;">La Matanza</p></th>
+																																        <th><p  style="color: #FFFFFF;">4125</p></th>
+																																	  <th><p style="color: #FFFFFF;">1050</p></th>
+																																	     <th><p style="color: #FFFFFF;">917</p></th>
+																																	         <th><p style="color: #FFFFFF;">29,78</p>
+																																			     <th><p  style="color: #FFFFFF;">138</p></th>
+																																			         </th>
+																																				  </th>
+																																				   </tr>
+																																				    <tr>
+																																					      
+																																					    <th><div>
+																																							        <a href="https://drive.google.com/file/d/1YDCNpZiwxxEK6zb-hKUnBJjwrXRR2Sxu/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >17 de Marzo Bis</p></img></a>
+																																						    </div></th>
+																																						    <th><p  style="color: #FFFFFF;">La Matanza</p></th>
+																																						      <th><p  style="color: #FFFFFF;">668</p></th>
+																																						         <th><p c style="color: #FFFFFF;">173</p></th>
+																																							     <th><p  style="color: #FFFFFF;">165</p></th>
+																																							          <th><p  style="color: #FFFFFF;">4,95</p></th>
+																																								        <th><p  style="color: #FFFFFF;">139</p></th>
+																																									 </tr>
+																																									  <tr>
+																																										   <th><div>
+																																												       <a href="https://drive.google.com/file/d/1YDCNpZiwxxEK6zb-hKUnBJjwrXRR2Sxu/view?usp=sharing" target="_blank"><p style="color: #FFFFFF;" >Puerta de Hierro</p></img></a>
+																																											   </div></th>
+																																											     <th><p  style="color: #FFFFFF;">La Matanza</p></th>
+																																											       <th><p  style="color: #FFFFFF;">5316</p></th>
+																																											          <th><p  style="color: #FFFFFF;">1349</p></th>
+																																												      <th><p  style="color: #FFFFFF;">1140</p></th>
+																																												           <th><p  style="color: #FFFFFF;">19,61</p></th>
+																																													         <th><p  style="color: #FFFFFF;">271</p></th>
+
+																																														  
+																																														  </tr>
+																																														   <tr>
+																																															     <th><div>
+																																																	         <a href="https://drive.google.com/file/d/1YDCNpZiwxxEK6zb-hKUnBJjwrXRR2Sxu/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;">San Petersburgo</p></img></a>
+																																																     </div></th>
+																																																       <th><p  style="color: #FFFFFF;">La Matanza</p></th>
+																																																         <th><p  style="color: #FFFFFF;">2252</p></th>
+																																																	    <th><p  style="color: #FFFFFF;">544</p></th>
+																																																	        <th><p  style="color: #FFFFFF;">518</p></th>
+																																																		     <th><p  style="color: #FFFFFF;">4,37</p></th>
+																																																		        <th><p  style="color: #FFFFFF;">515</p></th>
+																																																			 
+																																																			 </tr>
+																																																			  <tr>
+																																																				     <th><div>
+																																																						         <a href="https://drive.google.com/file/d/1IIZhhOSN4DNZxU1sDwYWfqxFxcqo_FQI/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >Porá</p></img></a>
+																																																					     </div></th>
+																																																					       <th><p  style="color: #FFFFFF;">Lanús</p></th>
+																																																					        
+																																																					         <th><p  style="color: #FFFFFF;">1355</p></th>
+																																																						    <th><p  style="color: #FFFFFF;">338</p></th>
+																																																						        <th><p  style="color: #FFFFFF;">324</p></th>
+																																																							     <th><p  style="color: #FFFFFF;">3,36</p></th>
+																																																							           <th><p  style="color: #FFFFFF;">403</p></th>
+																																																								    </tr> 
+																																																								     <tr>
+																																																									       <th><p style="color: #FFFFFF;">Campo Tongui</p></th>
+																																																									        <th><p  style="color: #FFFFFF;">Lomas de Zamora</p></th>
+																																																										  <th><p  style="color: #FFFFFF;">7291</p></th>
+																																																										     <th><p  style="color: #FFFFFF;">2322</p></th>
+																																																										         <th><p  style="color: #FFFFFF;">2656</p></th>
+																																																											      <th><p style="color: #FFFFFF;">115,12</p></th>
+																																																											            <th><p  style="color: #FFFFFF;">63</p></th>
+																																																												     </tr>
+																																																												      <tr>
+																																																													        <th><p  style="color: #FFFFFF;">La Olla</p></th>
+																																																														 <th><p style="color: #FFFFFF;">Malvinas Argentinas</p></th>
+																																																														   <th><p style="color: #FFFFFF;">274</p></th>
+																																																														      <th><p style="color: #FFFFFF;">72</p></th>
+																																																														          <th><p style="color: #FFFFFF;">56</p></th>
+																																																															       <th><p  style="color: #FFFFFF;">1,79</p></th>
+																																																															             <th><p  style="color: #FFFFFF;">153</p></th>
+																																																																      </tr>
+																																																																        <tr>
+																																																																		  <th><p  style="color: #FFFFFF;">Santa Elena</p></th>
+																																																																		   <th><p  style="color: #FFFFFF;">Malvinas Argentinas</p></th>
+																																																																		     <th><p  style="color: #FFFFFF;">264</p></th>
+																																																																		        <th><p  style="color: #FFFFFF;">63</p></th>
+																																																																			    <th><p  style="color: #FFFFFF;">61</p></th>
+																																																																			         <th><p c style="color: #FFFFFF;">2,1</p></th>
+																																																																				       <th><p  style="color: #FFFFFF;">126</p></th>
+																																																																				        </tr>
+																																																																					  <tr>
+																																																																						    <th><div>
+																																																																								        <a href="https://drive.google.com/file/d/1Efn--lW3N0TCHF51g4dbwrvXjQ4oCV5E/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >C.G -Pte. Solor: #FFFFFF;">134,73</p></th>
+																																																																						          <th><p  style="color: #FFFFFF;">97</p></th>
+																																																																							   </tr>
+																																																																							     <tr>
+																																																																								         <th><div>
+																																																																											     <a href="https://drive.google.com/file/d/1M1trvQq6fY2B4PvnkLCu0RwR8KH5iSb-/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >Itatí</p></img></a>
+																																																																										 </div></th>
+																																																																										   <th><p  style="color: #FFFFFF;">Quilmes</p></th>
+																																																																										    
+																																																																										     <th><p  style="color: #FFFFFF;">15142</p></th>
+																																																																										        <th><p style="color: #FFFFFF;">4262</p></th>
+																																																																											    <th><p style="color: #FFFFFF;">4151</p></th>
+																																																																											         <th><p style="color: #FFFFFF;">50,85</p></th>
+																																																																												       <th><p style="color: #FFFFFF;">298</p></th>
+																																																																												        </tr>
+																																																																													 <tr>
+																																																																														    <th><div>
+																																																																																        <a href="https://drive.google.com/file/d/1M1trvQq6fY2B4PvnkLCu0RwR8KH5iSb-/view?usp=sharing" target="_blank"><p style="color: #FFFFFF;" >Azul</p></img></a>
+																																																																															    </div></th>
+																																																																															      <th><p  style="color: #FFFFFF;">Quilmes</p></th>
+																																																																															        <th><p  style="color: #FFFFFF;">3128</p></th>
+																																																																																   <th><p  style="color: #FFFFFF;">836</p></th>
+																																																																																       <th><p  style="color: #FFFFFF;">799</p></th>
+																																																																																            <th><p  style="color: #FFFFFF;">8,46</p></th>
+																																																																																	          <th><p  style="color: #FFFFFF;">370</p></th>
+																																																																																		   </tr>
+																																																																																		    <tr>
+																																																																																			       <th><div>
+																																																																																					           <a href="https://drive.google.com/file/d/1yC7L_FsgNS0006_V-ofhLjCpsAyhGoXC/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >La Cava</p></img></a>
+																																																																																				       </div></th>
+																																																																																				         <th><p style="color: #FFFFFF;">San Isidro</p></th>
+																																																																																					   <th><p  style="color: #FFFFFF;">13515</p></th>
+																																																																																					      <th><p  style="color: #FFFFFF;">3475</p></th>
+																																																																																					          <th><p style="color: #FFFFFF;">2426</p></th>
+																																																																																						       <th><p  style="color: #FFFFFF;">18,21</p></th>
+																																																																																						             <th><p  style="color: #FFFFFF;">742</p></th>
+																																																																																							      </tr>
+																																																																																							       <tr>
+																																																																																								         <th><p  style="color: #FFFFFF;">Biocca</p></th>
+																																																																																									  <th><p  style="color: #FFFFFF;">San Vicente</p></th>
+																																																																																									    <th><p style="color: #FFFFFF;">639</p></th>
+																																																																																									       <th><p  style=th><p  style="color: #FFFFFF;">197</p></th>
+																																																																																									            <th><p  style="color: #FFFFFF;">13,21</p></th>
+																																																																																										          <th><p  style="color: #FFFFFF;">52</p></th>
+																																																																																											   </tr>
+																																																																																											     <tr>
+																																																																																												       <th><p  style="color: #FFFFFF;">San Jose - FFCC</p></th>
+																																																																																												        <th><p  style="color: #FFFFFF;">San Vicente</p></th>
+																																																																																													  <th><p style="color: #FFFFFF;">241</p></th>
+																																																																																													     <th><p  style="color: #FFFFFF;">65</p></th>
+																																																																																													         <th><p  style="color: #FFFFFF;">69</p></th>
+																																																																																														      <th><p  style="color: #FFFFFF;">5,31</p></th>
+																																																																																														            <th><p  style="color: #FFFFFF;">45</p></th>
+																																																																																															     </tr>
+																																																																																															       <tr>
+																																																																																																         <th><p  style="color: #FFFFFF;">San Jose I</p></th>
+																																																																																																	  <th><p  style="color: #FFFFFF;">San Vicente</p></th>
+																																																																																																	    <th><p style="color: #FFFFFF;">742</p></th>
+																																																																																																	       <th><p  style="color: #FFFFFF;">220</p></th>
+																																																																																																	           <th><p  style="color: #FFFFFF;">259</p></th>
+																																																																																																		        <th><p  style="color: #FFFFFF;">46,41</p></th>
+																																																																																																			      <th><p  style="color: #FFFFFF;">16</p></th>
+																																																																																																			       </tr>
+
+																																																																																																			       <tr>
+																																																																																																				         <th><div>
+																																																																																																							     <a href="https://drive.google.coXo4225/view?usp=sharing" target="_blank"><p  style="color: #FFFFFF;" >Garrote</p></img></a>
+																																																																																																						 </div></th>
+																																																																																																						   <th><p  style="color: #FFFFFF;">Tigre</p></th>
+																																																																																																						     <th><p  style="color: #FFFFFF;">2649</p></th>
+																																																																																																						        <th><p  style="color: #FFFFFF;">790</p></th>
+																																																																																																							    <th><p  style="color: #FFFFFF;">806</p></th>
+																																																																																																							         <th><p style="color: #FFFFFF;">7,38</p></th>
+																																																																																																								       <th><p style="color: #FFFFFF;">359</p></th>
+																																																																																																								        </tr>
+																																																																																																									 <tr>
+																																																																																																										   <th ><p  style="color: #FFFFFF;">Esperanza</p></th>
+																																																																																																										    <th><p  style="color: #FFFFFF;">Tres de Febrero</p></th>
+																																																																																																										      <th><p  style="color: #FFFFFF;">755</p></th>
+																																																																																																										         <th><p  style="color: #FFFFFF;">182</p></th>
+																																																																																																											     <th><p  style="color: #FFFFFF;">148</p></th>
+																																																																																																											          <th><p  style="color: #FFFFFF;">4,51</p></th>
+																																																																																																												        <th><p  style="color: #FFFFFF;">167</p></th>
+																																																																																																													 </tr>
+																																																																																																													 <tr> 
+
+																																																																																																														   <th><p  style="color: #FFFF: #FFFFFF;">TOTAL</p></th>
+
+																																																																																																														    <th><p style="color: #FFFFFF;">107169</p></th>
+																																																																																																														      <th><p  style="color: #FFFFFF;">29053</p></th>
+																																																																																																														         <th><p style="color: #FFFFFF;">29668</p></th>
+																																																																																																															     <th><p  style="color: #FFFFFF;">725,62</p></th>
+																																																																																																															     <th><p  style="color: #FFFFFF;"> 209 (promedio)</p></th>
+					      </tbody>
+
+
+					       
+

@@ -4,11 +4,11 @@ var sources = {
         title: "opisu",
         ptype: "gxp_wmscsource"
         },
-    oficiales: {
+   /* oficiales: {
 	    url: "http://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU/ows?service",  
         title: "opisu",
         ptype: "gxp_wmscsource"
-        },
+        },*/
     arba: {
          url: "http://geo.arba.gov.ar/geoserver/idera/wms?",
          title: "Buenos Aires - ARBA",
