@@ -46,7 +46,7 @@ var sources = {
         ptype: "gxp_wmscsource"
         },
     argen: {
-        url: "https://wms.ign.gob.ar/geoserver/argenmap/wms?service",        
+        url: "https://wms.ign.gob.ar/geoserver/capabaseargenmap/gwc/service/wmts?request=GetCapabilities",        
         title: "argen",
         ptype: "gxp_wmscsource"
         },
