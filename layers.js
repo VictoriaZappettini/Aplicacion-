@@ -408,19 +408,14 @@ var layers = [
             fixed: true,
             type: "OpenLayers.Layer",
             args: ["Sin capa base",{visibility: false}]
-        },{
-        source: "argen",
-        name: "area_protegida",
-        visibility: false,
-        title: "area_protegida",
-        group: "background" 
-        },
-	{ source: "argen" ,
-	 name: "areas_de_aguas_continentales",
-	 visibility: false,
-	 title: "areas_de_aguas_continentales",
-	 group: "background",
-	},
+        }
+	,{
+            source: "argen",
+            group: "background",
+            fixed: true,
+            type: "OpenLayers.Layer",
+            args: ["ArgenMap","https://wms.ign.gob.ar/geoserver/capabaseargenmap/gwc/service/wmts?request=GetCapabilities",{SphericalMercator: true,visibility: false}]
+        }
 	
 	 
 ];
