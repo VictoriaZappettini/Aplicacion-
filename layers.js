@@ -12,8 +12,23 @@ var layers = [
             name: "Barrios_Intervencion_OPISU_NOV_2020",
             visibility: false,
             title: "Barrios_Intervencion_OPISU_NOV_2020",
+            group: "agregadas"
+        },
+	      {
+            source: "opisu",
+            name: "40 AMBA - Deficit Urbano Habitacional",
+            visibility: false,
+            title: "Datos básicos y déficit Urbano habitacional por Partido AMBA",
             group: "opisu"
         },
+	{
+            source: "opisu",
+            name: "Barrios_Intervencion_OPISU_DIC_2020",
+            visibility: false,
+            title: "Barrios Intervención Diciembre 2020",
+            group: "opisu"
+        },
+	
        /* {
             source: "opisu",
             name: "Barrios_RPPVAP_16-4-20_geoTopo",
