@@ -204,7 +204,7 @@ Ext.onReady(function() {
                 text: "Busqueda x Nomenclatura",
                 iconCls: "gxp-icon-find",
                 menu: {
-                    items: [{
+                    items: [/*{
                         text: "Por Partido-Partida",
                         iconCls: "gxp-icon-find",
                         handler: function(a, b) {
@@ -216,7 +216,7 @@ Ext.onReady(function() {
                         handler: function() {
                             nomenclatura.mostrar()
                         }
-                    }/*, {
+                    }, {
                         text: "Por Registro Urb. Cerradas",
                         iconCls: "gxp-icon-find",
                         handler: function() {
