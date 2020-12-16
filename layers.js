@@ -1,12 +1,12 @@
 var layers = [     
         //OPISU 
-        /* {
+         {
             source: "opisu",
-            name: "Renabap_2018_base_csv_shape",
+            name: "Precios_entorno_Itati_2020",
             visibility: false,
-            title: "Renabap 2018 base",
-            group: "oficiales"
-        },*/
+            title: "Relevamiento mercado inmobiliario Itatí ",
+            group: "opisu"
+        },
       {
             source: "opisu",
             name: "Barrios_Intervencion_OPISU_NOV_2020",
