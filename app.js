@@ -17,7 +17,7 @@ Ext.onReady(function() {
                 region: "north",
                 border: !0,
                 height: 100,
-                html: '<img src="img/IDE1.png"  width="1400" height="100"/>'
+                html: '<img src="img/Ide_Nuevo2.png"  width="1400" height="100"/>'
                 //items: [{
                 //   
                // }]
