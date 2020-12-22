@@ -7,6 +7,20 @@ var layers = [
             title: "Relevamiento mercado inmobiliario Itatí ",
             group: "opisu"
         },
+	  {
+            source: "opisu",
+            name: "OBRAS_EN_EJECUCION",
+            visibility: false,
+            title: "Obras en Ejecución ",
+            group: "opisu"
+        },
+	  {
+            source: "opisu",
+            name: "OBRAS_PROYECTADAS",
+            visibility: false,
+            title: "Obras Proyectadas ",
+            group: "opisu"
+        },
       {
             source: "opisu",
             name: "Barrios_Intervencion_OPISU_NOV_2020",
