@@ -37,7 +37,7 @@ var layers = [
         },
 	{
             source: "opisu",
-            name: "Barrios_Intervencion_OPISU_DIC_2020",
+            name: "Barrios_Intervencion_OPISU_DICI_2020",
             visibility: false,
             title: "Barrios Intervención Diciembre 2020",
             group: "opisu"
