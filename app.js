@@ -17,7 +17,7 @@ Ext.onReady(function() {
                 region: "north",
                 border: !0,
                 height: 100,
-                html: '<img src="img/Ide_Nuevo2.png"  width="1400" height="100"/>'
+                html: '<img src="img/Header IDE_Mesa.png"  width="1500" height="115"/>'
                 //items: [{
                 //   
                // }]
@@ -41,9 +41,6 @@ Ext.onReady(function() {
                 {
                     title: "Google Street",
                     html: "<iframe  width='100%' height='100%' src='street.html'>"
-                }, {
-                    title: "Ayuda",
-                    html: "<iframe  width='100%' height='100%' src='help.html'>"
                 },
                 {
                     title: "Acerca de",
@@ -74,6 +71,10 @@ Ext.onReady(function() {
                  {
                     title: "Participación Ciudadana",
                     html: "<iframe  width='100%' height='100%' src='participacion.html'>"
+                },
+                {
+                    title: "Ayuda",
+                    html: "<iframe  width='100%' height='100%' src='help.html'>"
                 },
                 {
                     title: "Servicios WMS/WFS",
@@ -311,4 +312,6 @@ Ext.onReady(function() {
     }
     buffer = new Buffer(this)
 });
+
+
 
