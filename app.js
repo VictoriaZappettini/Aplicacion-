@@ -17,7 +17,7 @@ Ext.onReady(function() {
                 region: "north",
                 border: !0,
                 height: 100,
-                html: '<img src="img/Header IDE_Mesa.png"  width="1500" height="115"/>'
+                html: '<img src="img/Header IDE_Mesa.png"  width="1500" height="108"/>'
                 //items: [{
                 //   
                // }]
