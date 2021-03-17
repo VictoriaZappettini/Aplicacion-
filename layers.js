@@ -21,6 +21,13 @@ var layers = [
             title: "Obras Proyectadas ",
             group: "opisu"
         }, */
+          {
+            source: "opisu",
+            name: "Barrios_Intervencion_OPISU_MAR_2021",
+            visibility: false,
+            title: "Barrios_Intervencion_OPISU_MAR_2021",
+            group: "opisu"
+        },
       {
             source: "opisu",
             name: "Barrios_Intervencion_OPISU_NOV_2020",
@@ -40,7 +47,7 @@ var layers = [
             name: "Barrios_Intervencion_OPISU_DICI_2020",
             visibility: false,
             title: "Barrios Intervención Diciembre 2020",
-            group: "opisu"
+            group: "agregadas"
         },
 	
        /* {
