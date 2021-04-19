@@ -48,7 +48,7 @@ var sources = {
     argen: {
         url: "https://wms.ign.gob.ar/geoserver/capabaseargenmap/gwc/service/wmts?request=GetCapabilities",        
         title: "argen",
-        ptype: "gxp_wmscsource"
+        ptype: "gxp_olsource"
         },
    
     ol: {
