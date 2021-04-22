@@ -1,6 +1,6 @@
 var sources = {
     opisu: {
-	    url: "http://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU/ows?service",        
+	    url: "https://geoserver.opisu.gba.gob.ar/geoserver/IDEOPISU/ows?service",        
         title: "opisu",
         ptype: "gxp_wmscsource"
         },
