@@ -45,18 +45,18 @@ var sources = {
         title: "INDEC",
         ptype: "gxp_wmscsource"
         },
-    argen: {
-        url: "http://wms.ign.gob.ar/geoserver/capabaseargenmap/gwc/service/wmts?request=GetCapabilities",        
-        title: "argen",
-        ptype: "gxp_olsource"
-        },
    
     ol: {
         ptype: "gxp_olsource"
     },
     osm:{
         ptype: "gxp_osmsource"
-     }
+     },
+	 argen: {
+        url: "http://wms.ign.gob.ar/geoserver/capabaseargenmap/gwc/service/wmts?request=GetCapabilities",        
+        title: "argen",
+        ptype: "gxp_olsource"
+        },	
 
 }
 
