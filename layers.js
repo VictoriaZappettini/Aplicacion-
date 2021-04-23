@@ -440,7 +440,7 @@ var layers = [
 	,{
             source: "argen",
             group: "background",
-            fixed: true,
+            fixed: false,
             type: "OpenLayers.Layer",
             args: ["ArgenMap","https://wms.ign.gob.ar/geoserver/capabaseargenmap/gwc/service/wmts?request=GetCapabilities",{SphericalMercator: true,visibility: false}]
         }
