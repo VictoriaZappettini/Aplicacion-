@@ -15,22 +15,22 @@ var sources = {
          ptype: "gxp_wmscsource"
         },
     idehab: {
-         url: "http://geo.arba.gov.ar/geoserver/idera/wms?",
+         url: "https://geo.arba.gov.ar/geoserver/idera/wms?",
          title: "ideHab",
          ptype: "gxp_wmscsource"
         },
     urbasig: {
-        url: "http://www.urbasig.gob.gba.gob.ar/geoserver/urbasig/wms",        
+        url: "https://www.urbasig.gob.gba.gob.ar/geoserver/urbasig/wms",        
         title: "Buenos Aires - URBASIG",
         ptype: "gxp_wmscsource"
         },
     dipsoh: {
-        url: "http://www.mosp.gba.gov.ar/sig_hidraulica/ms/geoserver/dipsoh/wms",        
+        url: "https://www.mosp.gba.gov.ar/sig_hidraulica/ms/geoserver/dipsoh/wms",        
         title: "Hidraulica",
         ptype: "gxp_wmscsource"
         },
     geoinfra: {
-        url: "http://www.geoinfra.minfra.gba.gov.ar/geoserver/Geoinfra/wms",        
+        url: "https://www.geoinfra.minfra.gba.gov.ar/geoserver/Geoinfra/wms",        
         title: "GeoInfra",
         ptype: "gxp_wmscsource"
         },
@@ -53,7 +53,7 @@ var sources = {
         ptype: "gxp_osmsource"
      },
 	 argen: {
-        url: "http://wms.ign.gob.ar/geoserver/capabaseargenmap/gwc/service/wmts?request=GetCapabilities",        
+        url: "https://wms.ign.gob.ar/geoserver/capabaseargenmap/gwc/service/wmts?request=GetCapabilities",        
         title: "argen",
         ptype: "gxp_olsource"
         },	
