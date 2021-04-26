@@ -5,6 +5,7 @@ var grupos_capas = {
 				"ign" : {title: "IGN",  expanded: false},
 				"geoinfra" : {title: "GeoInfra",  expanded: false},
 				"indec" : {title: "INDEC",  expanded: false},
+				"idehab" : {title: "IDEHab",  expanded: false},
                 "urbasig" : {title: "Urbasig", expanded: false},
 
 		      	//"IdeHab" : {title: "IdeHab",  expanded: false},
