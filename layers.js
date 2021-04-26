@@ -438,10 +438,10 @@ var layers = [
             args: ["Sin capa base",{visibility: false}]
         }
 	,{
-            source: "argen",
+            source: "osm",
             group: "background",
             fixed: false,
-            type: "OpenLayers.Layer",
+	    selected: false,		
             args: ["ArgenMap","https://wms.ign.gob.ar/geoserver/capabaseargenmap/gwc/service/wmts?request=GetCapabilities",{SphericalMercator: true,visibility: false}]
         }
 	
