@@ -15,7 +15,7 @@ var sources = {
          ptype: "gxp_wmscsource"
         },
     idehab: {
-         url: "https://geo.arba.gov.ar/geoserver/idera/wms?",
+         url: "http://181.171.117.68/geoserver/ows?service",
          title: "ideHab",
          ptype: "gxp_wmscsource"
         },
