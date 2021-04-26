@@ -378,9 +378,16 @@ var layers = [
       // IDEHab //
     {
         source: "idehab",
-        name: "publico:villas_y_asentamientos_confirmados_rppvap",
+        name: "capabase",
         visibility: false,
-        title: "Villas y asentamientos",
+        title: "Capa Base Catastro",
+        group: "idehab"
+    },
+	  {
+        source: "idehab",
+        name: "geonode:calles_lujan",
+        visibility: false,
+        title: "Calles Lujan",
         group: "idehab"
     },
      // UrbaSIG //   
