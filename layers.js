@@ -106,7 +106,7 @@ var layers = [
             group: "geoinfra"
         },
         //ARBA
-         {
+       /*  {
         source: "arba",
         name: "Circunscripcion",
         visibility: false,
@@ -160,7 +160,7 @@ var layers = [
         visibility: false,
         title: "Seccion catastral",
         group: "arba"
-    },{ 
+    }*/{ 
         source: "arba",
         name: "Grupo IDERA",
         visibility: false,
