@@ -23,10 +23,17 @@ var layers = [
         }, */
           {
             source: "opisu",
+            name: "Barrios_Intervencion_OPISU_MAYO_2021",
+            visibility: false,
+            title: "Barrios_Intervencion_OPISU_MAYO_2021",
+            group: "opisu"
+        },
+          {
+            source: "opisu",
             name: "Barrios_Intervencion_OPISU_ABRIL_2021",
             visibility: false,
             title: "Barrios_Intervencion_OPISU_ABRIL_2021",
-            group: "opisu"
+            group: "agregadas"
         },
 	  {
             source: "opisu",
