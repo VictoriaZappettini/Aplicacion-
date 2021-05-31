@@ -30,7 +30,7 @@ var sources = {
         ptype: "gxp_wmscsource"
         },
     geoinfra: {
-        url: "https://www.geoinfra.minfra.gba.gob.ar/geoserver/Geoinfra/wms",        
+        url: "https://www.geoinfra.minfra.gba.gov.ar/geoserver/Geoinfra/wms",        
         title: "GeoInfra",
         ptype: "gxp_wmscsource"
         },
