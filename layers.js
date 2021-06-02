@@ -95,7 +95,7 @@ var layers = [
         //},
        {  // GeoInfra //
             source: "geoinfra",
-            name: "acueductos",
+            name: "Geoinfra:acueductos",
             visibility: false,
             title: "Acueductos",
             group: "geoinfra"
