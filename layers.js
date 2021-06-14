@@ -94,19 +94,19 @@ var layers = [
             //group: "opisu"
         //},
        {  // GeoInfra //
-            source: "GeoInfra",
+            source: "geoinfra",
             name: "Geoinfra:acueductos",
             visibility: false,
             title: "Acueductos",
             group: "geoinfra"
         },{
-            source: "GeoInfra",
+            source: "geoinfra",
             name: "plantas_a",
             visibility: false,
             title: "Platas de tratamiento",
             group: "geoinfra"
         },{
-            source: "GeoInfra",
+            source: "geoinfra",
             name: "pozosconget",
             visibility: false,
             title: "Pozos de agua",
