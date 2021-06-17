@@ -14,13 +14,13 @@ var layers = [
             title: "Coordinaciones Territoriales ",
             group: "opisu"
         },
-	  /*{
+	  {
             source: "opisu",
-            name: "OBRAS_PROYECTADAS",
+            name: "Barrios_Intervencion_OPISU_JUNIO_2021",
             visibility: false,
-            title: "Obras Proyectadas ",
+            title: "Barrios_Intervencion_OPISU_JUNIO_2021",
             group: "opisu"
-        }, */
+        },
           {
             source: "opisu",
             name: "Barrios_Intervencion_OPISU_MAYO_2021",
