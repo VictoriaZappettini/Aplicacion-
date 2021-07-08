@@ -18,7 +18,7 @@ var layers = [
             source: "opisu",
             name: "Barrios_Intervencion_OPISU_JULIO_2021",
             visibility: false,
-            title: "Barrios_Intervencion_OPISU_JUNIO_2021",
+            title: "Barrios_Intervencion_OPISU_JULIO_2021",
             group: "opisu"
         },
 	  {
